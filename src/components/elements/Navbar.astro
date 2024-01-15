@@ -6,19 +6,19 @@ import  Navitem from "../shared/Navitem.astro";
 const navItems = [
     {
         href:"#",
-        text:"Home"
-    },
-    {
-        href:"#services",
-        text:"Services"
+        text:"Inicio"
     },
     {
         href:"#about-us",
-        text:"About us"
+        text:"Quienes Somos?"
     },
     {
-        href:"#features",
-        text:"Features"
+        href:"#services",
+        text:"Proyectos"
+    },
+    {
+        href:"#contact",
+        text:"Contacto"
     },
 ]
 ---
@@ -28,7 +28,7 @@ const navItems = [
         <nav class="w-full flex justify-between gap-6 relative">
             <!-- logo -->
             <div class="min-w-max inline-flex relative">
-                <a href="/" class="relative flex items-center gap-3">
+                <!-- <a href="/" class="relative flex items-center gap-3">
                     <div class="relative w-7 h-7 overflow-hidden flex rounded-xl">
                         <span class="absolute w-4 h-4 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
                         <span class="absolute w-4 h-4 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
@@ -36,9 +36,12 @@ const navItems = [
                         <span class="absolute w-2 h-2 rounded-full bg-heading-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
                     </div>
                     <div class="inline-flex text-lg font-semibold text-heading-1">
-                        AgenceX
+                        Black Golden
                     </div>
-                </a>
+                </a> -->
+                <div>
+                    <img src="/logo-bg-horizontal.png" alt="" width="300">
+                </div>
             </div>
 
             <div data-nav-overlay aria-hidden="true" class="fixed hidden inset-0 lg:!hidden bg-box-bg bg-opacity-50 backdrop-filter backdrop-blur-xl"></div>
@@ -51,7 +54,7 @@ const navItems = [
                 </ul>
 
                 <div class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-bg lg:border-0 px-6 lg:px-0">
-                    <BtnLink text="Get Started" href="#cta" className="flex justify-center w-full sm:w-max" variant="primary"/>
+                    <BtnLink text="Contactanos" href="https://wa.link/31v9po"  className="flex justify-center w-full sm:w-max" variant="primary"/>
                 </div>
             </div>
 
